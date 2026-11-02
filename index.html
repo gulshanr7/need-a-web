@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Core Page Title -->
+  <title>Gulshan Rana | Full-Stack Web & Android App Developer</title>
+
+  <!-- SEO Meta Tags for Local & Global Indexing (Hidden from UI) -->
+  <meta name="description" content="Gulshan Rana is an experienced Software Engineer specializing in high-performance Website Development, React, Node.js, and Native/Cross-platform Android App Development. Providing software solutions across Karnal, Panipat, Kurukshetra, Haryana, and worldwide.">
+  <meta name="keywords" content="Gulshan Rana, Web Developer Karnal, Android App Developer Karnal, Website Designer Kurukshetra, Software Developer Panipat, App Development Haryana, React Developer Karnal, Mobile App Developer Panipat, Full Stack Developer Haryana, Freelance Web Developer Karnal, Android Studio Kotlin Developer">
+  <meta name="author" content="Gulshan Rana">
+  <meta name="robots" content="index, follow">
+
+  <!-- Geo Meta Tags for Search Engines (Hidden from UI) -->
+  <meta name="geo.region" content="IN-HR">
+  <meta name="geo.placename" content="Karnal, Haryana, India">
+  <meta name="geo.position" content="29.6857;76.9905">
+  <meta name="ICBM" content="29.6857, 76.9905">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gulshan Rana | Full-Stack Web & Android App Developer">
+  <meta property="og:description" content="Building modern, scalable web platforms and native Android applications. Based in Karnal, serving clients across Panipat, Kurukshetra, Haryana, and globally.">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Schema.org Structured Data (Local Business & Professional Service) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "ProfessionalService"],
+    "name": "Gulshan Rana",
+    "jobTitle": "Full-Stack Web & Android App Developer",
+    "telephone": "+918295573062",
+    "email": "gulshanr7@gmail.com",
+    "url": "https://gulshanrana.github.io",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karnal",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 29.6857,
+      "longitude": 76.9905
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Karnal" },
+      { "@type": "City", "name": "Panipat" },
+      { "@type": "City", "name": "Kurukshetra" },
+      { "@type": "AdministrativeArea", "name": "Haryana" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "knowsAbout": [
+      "Website Development",
+      "Android App Development",
+      "React.js",
+      "Node.js",
+      "Kotlin",
+      "UI/UX Engineering",
+      "RESTful APIs"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              dark: '#080c14',
+              surface: '#0f172a',
+              card: 'rgba(15, 23, 42, 0.65)',
+              accent: '#38bdf8',
+              violet: '#6366f1',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Glassmorphism effects */
+    .glass-nav {
+      background: rgba(8, 12, 20, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s ease-in-out;
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      transform: translateY(-2px);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #f8fafc 10%, #38bdf8 60%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn-gradient {
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+      transition: all 0.25s ease;
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(135deg, #0369a1 0%, #4338ca 100%);
+      box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-cyan-500/20 selection:text-cyan-300 relative overflow-x-hidden">
+
+  <!-- Ambient Light Accents (Subtle, High-End) -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-32 -left-20 w-[32rem] h-[32rem] bg-cyan-600/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-1/2 -right-32 w-[34rem] h-[34rem] bg-indigo-600/10 rounded-full blur-[160px]"></div>
+    <div class="absolute bottom-10 left-1/3 w-[26rem] h-[26rem] bg-emerald-600/8 rounded-full blur-[140px]"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-base shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition">
+          GR
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg text-white group-hover:text-cyan-400 transition tracking-tight">Gulshan Rana</span>
+          <span class="text-xs text-slate-400 font-medium">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition">About</a>
+        <a href="#services" class="text-sm font-medium text-slate-300 hover:text-white transition">Services</a>
+        <a href="#projects" class="text-sm font-medium text-slate-300 hover:text-white transition">Projects</a>
+        <a href="#skills" class="text-sm font-medium text-slate-300 hover:text-white transition">Stack</a>
+        <a href="#contact" class="btn-gradient text-white text-xs font-semibold px-4 py-2.5 rounded-xl flex items-center gap-2">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden text-slate-300 hover:text-white p-2">
+        <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden glass-nav border-t border-slate-800/60 px-6 py-6 space-y-4">
+      <a href="#home" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Home</a>
+      <a href="#about" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">About</a>
+      <a href="#services" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Services</a>
+      <a href="#projects" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Projects</a>
+      <a href="#skills" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Stack</a>
+      <a href="#contact" class="mobile-link block text-sm font-medium text-cyan-400">Contact Gulshan</a>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-28">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-[82vh] flex items-center justify-center px-4 sm:px-6 py-12">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-slate-800 bg-slate-900/80 text-xs font-medium text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Available for New Projects & Freelance Engagements</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+          Engineering High-Performance <br>
+          <span class="text-gradient">Websites & Android Apps</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          Hi, I'm <strong class="text-white font-semibold">Gulshan Rana</strong>. I architect intuitive digital products, ranging from fast, responsive full-stack web applications to feature-rich native Android experiences.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <a href="#projects" class="btn-gradient text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg">
+            <span>Explore Selected Work</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a href="https://wa.me/918295573062?text=Hi%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="glass-card hover:bg-slate-800/60 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+            <span>Quick WhatsApp</span>
+          </a>
+          <a href="tel:+918295573062" class="glass-card hover:bg-slate-800/60 text-slate-300 hover:text-white px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-cyan-400"></i>
+            <span>+91 8295573062</span>
+          </a>
+        </div>
+
+        <!-- Tech Quick Badges -->
+        <div class="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 border-t border-slate-800/70">
+          <span class="flex items-center gap-1.5"><i data-lucide="code" class="w-3.5 h-3.5 text-cyan-400"></i> Modern Frontend & Backend</span>
+          <span class="text-slate-700 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-indigo-400"></i> Native Android & Kotlin</span>
+          <span class="text-slate-700 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="zap" class="w-3.5 h-3.5 text-emerald-400"></i> Performance & SEO Focused</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Visual / Highlights -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="glass-card p-8 rounded-3xl space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-600/20 border border-cyan-500/30 flex items-center justify-center text-xl font-bold text-cyan-400">
+                GR
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-lg">Gulshan Rana</h3>
+                <p class="text-xs text-slate-400">Software Developer & Consultant</p>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Focused on delivering end-to-end software solutions with clean architecture, robust security, and delightful user interactions.
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                <span class="text-2xl font-bold text-white block">40+</span>
+                <span class="text-[11px] text-slate-400">Delivered Builds</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                <span class="text-2xl font-bold text-cyan-400 block">100%</span>
+                <span class="text-[11px] text-slate-400">On-Time Delivery</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800">
+              <span class="flex items-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i> gulshanr7@gmail.com
+              </span>
+              <span class="flex items-center gap-1.5">
+                <i data-lucide="globe" class="w-3.5 h-3.5 text-indigo-400"></i> Global Reach
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio Details -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+            About Developer
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Crafting Reliable Code That Drives Real Business Value
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            I specialize in full-lifecycle product development, translating ambiguous requirements into polished web platforms and production-ready mobile apps.
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            My engineering process prioritizes clean code standards, modular design patterns, cross-browser compatibility, and seamless API integrations. Whether you need an e-commerce infrastructure, a bespoke software portal, or a high-performance Android mobile application, I deliver stable, scalable results.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-2xl glass-card space-y-1.5">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2">
+                <i data-lucide="monitor" class="w-4 h-4"></i>
+              </div>
+              <h4 class="text-sm font-semibold text-white">Full-Stack Web Engineering</h4>
+              <p class="text-xs text-slate-400">Pixel-perfect, highly responsive interfaces backed by scalable backend services.</p>
+            </div>
+            <div class="p-4 rounded-2xl glass-card space-y-1.5">
+              <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-2">
+                <i data-lucide="smartphone" class="w-4 h-4"></i>
+              </div>
+              <h4 class="text-sm font-semibold text-white">Native & Hybrid Mobile</h4>
+              <p class="text-xs text-slate-400">Intuitive Android applications following Google Material 3 standards and clean architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+          Capabilities
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Services Built for Growth & Reliability
+        </h2>
+        <p class="text-sm text-slate-400">
+          Professional development services focused on velocity, security, and exceptional user satisfaction.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Website Development</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Custom web applications built with modern frontend frameworks and responsive architectures designed to maximize speed and conversions.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Responsive Single-Page Apps (React, Next.js)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Custom E-Commerce & Business Portals</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Technical SEO & PageSpeed Optimization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Cloud Hosting & CI/CD Pipelines</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Start Web Project</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="smartphone" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Android App Development</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Robust, battery-efficient mobile applications built natively for the Android platform with intuitive UI and rock-solid state management.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Kotlin & Java Android Architecture</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Offline-First Storage (Room DB / SQLite)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Push Alerts & Background Syncing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Google Play Store Submission & Audit</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Start Mobile Project</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">API & Cloud Integrations</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Bridging frontends with resilient backend workflows, third-party microservices, authentication systems, and payment gateways.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> REST API Design & Implementation</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Payment Gateways & Secure Checkouts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Database Modeling & Query Optimization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Code Auditing & Performance Refactoring</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Connect Services</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Works / Projects -->
+    <section id="projects" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">
+            Selected Works
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Recent Web & Mobile Deployments
+          </h2>
+        </div>
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-1.5 p-1.5 rounded-xl bg-slate-900 border border-slate-800 self-start md:self-auto">
+          <button onclick="filterPortfolio('all')" id="btn-all" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-white">All</button>
+          <button onclick="filterPortfolio('web')" id="btn-web" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">Web</button>
+          <button onclick="filterPortfolio('android')" id="btn-android" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">Android</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsContainer">
+        <!-- Item 1: Web -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-cyan-400">Web App</span>
+              <i data-lucide="layout" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Enterprise Business Dashboard</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Real-time analytics dashboard featuring granular access permissions, telemetry charts, and dynamic invoice generation.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">React</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Tailwind</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Node.js</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
+              <span>Discuss Similar Build</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 2: Android -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-indigo-400">Android App</span>
+              <i data-lucide="smartphone" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Smart Logistics & Courier Tracker</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Native Android logistics application featuring background GPS location updates, offline cache, and real-time shipment status.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Room DB</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">WorkManager</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>View Architecture Specs</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 3: Web -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-cyan-400">Web App</span>
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Direct-to-Consumer E-Commerce</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              High-converting headless storefront with razor-fast product browsing, cart persistence, and secure payment processing.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Next.js</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">PostgreSQL</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Razorpay</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
+              <span>Discuss Storefront</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 4: Android -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-indigo-400">Android App</span>
+              <i data-lucide="activity" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Health & Fitness Daily Routine</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Mobile utility app offering personalized workout schedules, pedometer sync, and local data export capabilities.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Android SDK</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Material 3</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>Request APK Demo</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 5: Web -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-cyan-400">Web Platform</span>
+              <i data-lucide="server" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">SaaS Documentation & API Portal</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Ultra-fast technical docs portal with real-time API query playground, version toggling, and instant search indexing.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">React</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Tailwind</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Algolia</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
+              <span>View Case Details</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 6: Android -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-indigo-400">Android App</span>
+              <i data-lucide="bell" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Instant Event Notification Hub</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Lightweight utility application integrating Firebase Cloud Messaging, topic subscriptions, and deep linking workflows.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Firebase FCM</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">REST API</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>Inquire Specs</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+          Core Competencies
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Tools & Modern Technologies
+        </h2>
+        <p class="text-sm text-slate-400">
+          Industry-tested technologies utilized to deliver stable, scalable, and maintainable software.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+        <!-- 1 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="layers" class="w-6 h-6 text-cyan-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">React.js</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Frontend</span>
+        </div>
+        <!-- 2 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="smartphone" class="w-6 h-6 text-indigo-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Kotlin & Java</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Android SDK</span>
+        </div>
+        <!-- 3 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="server" class="w-6 h-6 text-emerald-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Node.js</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Backend APIs</span>
+        </div>
+        <!-- 4 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="cpu" class="w-6 h-6 text-sky-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Next.js</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Full-Stack</span>
+        </div>
+        <!-- 5 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="database" class="w-6 h-6 text-amber-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">PostgreSQL</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Relational DB</span>
+        </div>
+        <!-- 6 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="box" class="w-6 h-6 text-emerald-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">MongoDB</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">NoSQL Store</span>
+        </div>
+        <!-- 7 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="flame" class="w-6 h-6 text-orange-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Firebase</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Auth & FCM</span>
+        </div>
+        <!-- 8 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="palette" class="w-6 h-6 text-cyan-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Tailwind CSS</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">UI Styling</span>
+        </div>
+        <!-- 9 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="git-branch" class="w-6 h-6 text-rose-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Git & GitHub</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Version Control</span>
+        </div>
+        <!-- 10 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="cloud" class="w-6 h-6 text-blue-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">RESTful APIs</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Integration</span>
+        </div>
+        <!-- 11 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="shield-check" class="w-6 h-6 text-teal-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">JWT & Security</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Authentication</span>
+        </div>
+        <!-- 12 -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+          <i data-lucide="play-circle" class="w-6 h-6 text-violet-400 mb-2"></i>
+          <span class="text-xs font-bold text-white">Play Console</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Deployment</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+          Direct Connect
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Let’s Discuss Your Next Build
+        </h2>
+        <p class="text-sm text-slate-400">
+          Have an upcoming project, website revamp, or Android mobile app idea? Reach out directly.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Contact Methods Column -->
+        <div class="lg:col-span-5 space-y-4">
+          <!-- Call Card -->
+          <a href="tel:+918295573062" class="glass-card p-6 rounded-2xl flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-slate-400 font-medium">Direct Phone</p>
+              <p class="text-white font-bold text-base">+91 8295573062</p>
+            </div>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-cyan-400"></i>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:gulshanr7@gmail.com" class="glass-card p-6 rounded-2xl flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-xs text-slate-400 font-medium">Official Email</p>
+              <p class="text-white font-bold text-sm sm:text-base truncate">gulshanr7@gmail.com</p>
+            </div>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
+          </a>
+
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="glass-card p-6 rounded-2xl flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="message-square" class="w-5 h-5"></i>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-slate-400 font-medium">WhatsApp</p>
+              <p class="text-white font-bold text-base">Direct Chat</p>
+            </div>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-emerald-400"></i>
+          </a>
+
+          <!-- Availability Card -->
+          <div class="glass-card p-6 rounded-2xl space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <h4 class="text-sm font-bold text-white">Project Consultations</h4>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Available for full development cycles, standalone Android features, website overhauls, and technical consulting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-8 rounded-3xl">
+            <h3 class="text-xl font-bold text-white mb-1">Send a Message</h3>
+            <p class="text-xs text-slate-400 mb-6">Fill in your requirements and I'll respond within 24 hours.</p>
+
+            <form id="contactForm" onsubmit="handleInquiry(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5" for="nameInput">Your Name *</label>
+                  <input type="text" id="nameInput" required placeholder="John Doe" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5" for="emailInput">Your Email *</label>
+                  <input type="email" id="emailInput" required placeholder="john@example.com" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5" for="phoneInput">Phone / WhatsApp</label>
+                  <input type="tel" id="phoneInput" placeholder="+91 ..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5" for="serviceSelect">Service Needed</label>
+                  <select id="serviceSelect" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition">
+                    <option value="Website Development">Website Development</option>
+                    <option value="Android App Development">Android App Development</option>
+                    <option value="Full-Stack Web & Mobile">Full-Stack (Web + Android)</option>
+                    <option value="API Integration & Maintenance">API & Maintenance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1.5" for="messageInput">Project Overview *</label>
+                <textarea id="messageInput" required rows="4" placeholder="Briefly describe what you're looking to build..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"></textarea>
+              </div>
+
+              <button type="submit" class="w-full btn-gradient text-white font-semibold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg shadow-cyan-500/20">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 hidden">
+    <div class="glass-card max-w-md w-full p-6 sm:p-8 rounded-3xl text-center space-y-4">
+      <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto">
+        <i data-lucide="check" class="w-7 h-7"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white">Message Ready!</h3>
+      <p id="modalDescription" class="text-xs text-slate-300 leading-relaxed">
+        Your message draft has been prepared for Gulshan Rana.
+      </p>
+      <div class="pt-2 flex flex-col sm:flex-row gap-3">
+        <button onclick="closeModal()" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition">
+          Close
+        </button>
+        <a id="modalMailtoBtn" href="mailto:gulshanr7@gmail.com" class="w-full py-2.5 px-4 rounded-xl btn-gradient text-white text-xs font-semibold flex items-center justify-center gap-1.5">
+          <span>Open Email Client</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick-Action WhatsApp Button -->
+  <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-brand-dark relative z-10 py-10 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xs">
+          GR
+        </div>
+        <span class="font-bold text-slate-200 text-sm">Gulshan Rana</span>
+        <span class="text-slate-600">|</span>
+        <span class="text-xs text-slate-400">Web & Android Developer</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs text-slate-400">
+        <a href="tel:+918295573062" class="hover:text-cyan-400 transition">Phone</a>
+        <a href="mailto:gulshanr7@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+        <a href="https://wa.me/918295573062" target="_blank" class="hover:text-emerald-400 transition">WhatsApp</a>
+        <a href="https://github.com" target="_blank" class="hover:text-white transition">GitHub</a>
+      </div>
+
+      <p class="text-xs text-slate-500">
+        &copy; <span id="currentYear"></span> Gulshan Rana. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script logic -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set Dynamic Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Portfolio Filter
+    function filterPortfolio(category) {
+      const cards = document.querySelectorAll('.project-box');
+      const tabs = document.querySelectorAll('.portfolio-tab');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-cyan-500', 'text-white');
+        tab.classList.add('text-slate-400');
+      });
+
+      const activeTab = document.getElementById('btn-' + category);
+      if (activeTab) {
+        activeTab.classList.add('bg-cyan-500', 'text-white');
+        activeTab.classList.remove('text-slate-400');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Contact Form Handler
+    function handleInquiry(event) {
+      event.preventDefault();
+      const name = document.getElementById('nameInput').value.trim();
+      const email = document.getElementById('emailInput').value.trim();
+      const phone = document.getElementById('phoneInput').value.trim();
+      const service = document.getElementById('serviceSelect').value;
+      const message = document.getElementById('messageInput').value.trim();
+
+      const subject = encodeURIComponent(`Project Inquiry: ${service} - ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\nService: ${service}\n\nProject Overview:\n${message}`
+      );
+
+      const mailtoUrl = `mailto:gulshanr7@gmail.com?subject=${subject}&body=${body}`;
+
+      const mailtoBtn = document.getElementById('modalMailtoBtn');
+      mailtoBtn.href = mailtoUrl;
+
+      document.getElementById('modalDescription').textContent =
+        `Thank you ${name}! Your inquiry regarding "${service}" has been compiled. Click below to launch your email app and send it directly to gulshanr7@gmail.com.`;
+
+      document.getElementById('successModal').classList.remove('hidden');
+      document.getElementById('contactForm').reset();
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
