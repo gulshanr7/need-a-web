@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Core Page Title -->
-  <title>Gulshan Rana | Full-Stack Web & Android App Developer</title>
+  <title>Gulshan Rana | React JS, Tailwind CSS, Android Apps & PHP Developer</title>
 
-  <!-- SEO Meta Tags for Local & Global Indexing (Hidden from UI) -->
-  <meta name="description" content="Gulshan Rana is an experienced Software Engineer specializing in high-performance Website Development, React, Node.js, and Native/Cross-platform Android App Development. Providing software solutions across Karnal, Panipat, Kurukshetra, Haryana, and worldwide.">
-  <meta name="keywords" content="Gulshan Rana, Web Developer Karnal, Android App Developer Karnal, Website Designer Kurukshetra, Software Developer Panipat, App Development Haryana, React Developer Karnal, Mobile App Developer Panipat, Full Stack Developer Haryana, Freelance Web Developer Karnal, Android Studio Kotlin Developer">
+  <!-- SEO Meta Tags for Local & Global Indexing -->
+  <meta name="description" content="Gulshan Rana is an experienced developer specializing in Tailwind CSS, React.js, Native Android Apps, and Dynamic PHP Websites with Custom Admin Panels. Expert in HSSC Exam Preparation Apps, Online Mock Test Portals, and Custom Business Systems in Karnal, Haryana.">
+  <meta name="keywords" content="Gulshan Rana, React JS Developer Karnal, Tailwind CSS Developer, Android App Developer Haryana, PHP Website Developer Karnal, HSSC Exam Preparation App, HSSC Mock Test Website, Custom Admin Panel Developer, Android Studio Kotlin, PHP MySQL Developer Haryana, Web Developer Karnal">
   <meta name="author" content="Gulshan Rana">
   <meta name="robots" content="index, follow">
 
-  <!-- Geo Meta Tags for Search Engines (Hidden from UI) -->
+  <!-- Geo Meta Tags for Search Engines -->
   <meta name="geo.region" content="IN-HR">
   <meta name="geo.placename" content="Karnal, Haryana, India">
   <meta name="geo.position" content="29.6857;76.9905">
@@ -21,17 +21,17 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Gulshan Rana | Full-Stack Web & Android App Developer">
-  <meta property="og:description" content="Building modern, scalable web platforms and native Android applications. Based in Karnal, serving clients across Panipat, Kurukshetra, Haryana, and globally.">
+  <meta property="og:title" content="Gulshan Rana | React JS, Tailwind CSS, Android Apps & PHP Developer">
+  <meta property="og:description" content="Specialized in building high-performance Android Apps (HSSC Exam Prep & Mock Tests) and dynamic PHP websites with powerful Admin Panels. Based in Karnal, Haryana.">
   <meta property="og:locale" content="en_IN">
 
-  <!-- Schema.org Structured Data (Local Business & Professional Service) -->
+  <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["Person", "ProfessionalService"],
     "name": "Gulshan Rana",
-    "jobTitle": "Full-Stack Web & Android App Developer",
+    "jobTitle": "React JS, Android App & PHP Developer",
     "telephone": "+918295573062",
     "email": "gulshanr7@gmail.com",
     "url": "https://gulshanrana.github.io",
@@ -54,12 +54,12 @@
       { "@type": "Country", "name": "India" }
     ],
     "knowsAbout": [
-      "Website Development",
-      "Android App Development",
+      "Tailwind CSS",
       "React.js",
-      "Node.js",
-      "Kotlin",
-      "UI/UX Engineering",
+      "Android App Development",
+      "PHP & MySQL Web Development",
+      "Custom Admin Panels & Dashboards",
+      "HSSC Mock Test & Exam Prep Portals",
       "RESTful APIs"
     ]
   }
@@ -68,10 +68,10 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -92,7 +92,8 @@
               card: 'rgba(15, 23, 42, 0.65)',
               accent: '#38bdf8',
               violet: '#6366f1',
-              emerald: '#10b981'
+              emerald: '#10b981',
+              amber: '#f59e0b'
             }
           }
         }
@@ -103,24 +104,29 @@
   <style>
     /* Glassmorphism effects */
     .glass-nav {
-      background: rgba(8, 12, 20, 0.82);
+      background: rgba(8, 12, 20, 0.85);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-card {
-      background: rgba(15, 23, 42, 0.55);
+      background: rgba(15, 23, 42, 0.60);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       transition: all 0.25s ease-in-out;
     }
     .glass-card:hover {
-      border-color: rgba(56, 189, 248, 0.35);
+      border-color: rgba(56, 189, 248, 0.4);
       transform: translateY(-2px);
     }
     .text-gradient {
-      background: linear-gradient(135deg, #f8fafc 10%, #38bdf8 60%, #818cf8 100%);
+      background: linear-gradient(135deg, #f8fafc 10%, #38bdf8 55%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-amber {
+      background: linear-gradient(135deg, #fbbf24 10%, #f97316 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -136,7 +142,7 @@
 </head>
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-cyan-500/20 selection:text-cyan-300 relative overflow-x-hidden">
 
-  <!-- Ambient Light Accents (Subtle, High-End) -->
+  <!-- Ambient Light Accents -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
     <div class="absolute -top-32 -left-20 w-[32rem] h-[32rem] bg-cyan-600/10 rounded-full blur-[140px]"></div>
     <div class="absolute top-1/2 -right-32 w-[34rem] h-[34rem] bg-indigo-600/10 rounded-full blur-[160px]"></div>
@@ -153,7 +159,7 @@
         </div>
         <div class="flex flex-col">
           <span class="font-bold text-lg text-white group-hover:text-cyan-400 transition tracking-tight">Gulshan Rana</span>
-          <span class="text-xs text-slate-400 font-medium">Software Engineer</span>
+          <span class="text-xs text-slate-400 font-medium">React, Android & PHP Developer</span>
         </div>
       </a>
 
@@ -162,7 +168,7 @@
         <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition">About</a>
         <a href="#services" class="text-sm font-medium text-slate-300 hover:text-white transition">Services</a>
         <a href="#projects" class="text-sm font-medium text-slate-300 hover:text-white transition">Projects</a>
-        <a href="#skills" class="text-sm font-medium text-slate-300 hover:text-white transition">Stack</a>
+        <a href="#skills" class="text-sm font-medium text-slate-300 hover:text-white transition">Tech Stack</a>
         <a href="#contact" class="btn-gradient text-white text-xs font-semibold px-4 py-2.5 rounded-xl flex items-center gap-2">
           <span>Let's Talk</span>
           <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
@@ -181,7 +187,7 @@
       <a href="#about" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">About</a>
       <a href="#services" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Services</a>
       <a href="#projects" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Projects</a>
-      <a href="#skills" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Stack</a>
+      <a href="#skills" class="mobile-link block text-sm font-medium text-slate-300 hover:text-cyan-400">Tech Stack</a>
       <a href="#contact" class="mobile-link block text-sm font-medium text-cyan-400">Contact Gulshan</a>
     </div>
   </header>
@@ -194,27 +200,27 @@
         <!-- Status Pill -->
         <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-slate-800 bg-slate-900/80 text-xs font-medium text-slate-300">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Available for New Projects & Freelance Engagements</span>
+          <span>Available for Android Apps & Web Projects with Custom Admin Panels</span>
         </div>
 
         <!-- Headline -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
-          Engineering High-Performance <br>
-          <span class="text-gradient">Websites & Android Apps</span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.18]">
+          Specialized in <span class="text-cyan-400">Tailwind CSS</span>, <span class="text-sky-300">React JS</span>,<br>
+          <span class="text-indigo-400">Android Apps</span> & <span class="text-gradient">PHP Admin Panels</span>
         </h1>
 
         <!-- Subtext -->
-        <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Hi, I'm <strong class="text-white font-semibold">Gulshan Rana</strong>. I architect intuitive digital products, ranging from fast, responsive full-stack web applications to feature-rich native Android experiences.
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Hi, I'm <strong class="text-white font-semibold">Gulshan Rana</strong>. I architect dedicated <strong class="text-cyan-300 font-medium">Native Android Applications</strong> (such as HSSC Exam Preparation apps & Mock Test systems) and dynamic <strong class="text-indigo-300 font-medium">PHP & MySQL Websites</strong> equipped with powerful, easy-to-use <strong class="text-white font-medium">Admin Panels</strong>.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
           <a href="#projects" class="btn-gradient text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg">
-            <span>Explore Selected Work</span>
+            <span>Explore App & Web Builds</span>
             <i data-lucide="arrow-down" class="w-4 h-4"></i>
           </a>
-          <a href="https://wa.me/918295573062?text=Hi%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="glass-card hover:bg-slate-800/60 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2">
+          <a href="https://wa.me/918295573062?text=Hi%20Gulshan,%20I%20would%20like%20to%20discuss%20an%20Android%20App%20/%20PHP%20Website%20project" target="_blank" class="glass-card hover:bg-slate-800/60 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2">
             <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
             <span>Quick WhatsApp</span>
           </a>
@@ -225,12 +231,14 @@
         </div>
 
         <!-- Tech Quick Badges -->
-        <div class="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 border-t border-slate-800/70">
-          <span class="flex items-center gap-1.5"><i data-lucide="code" class="w-3.5 h-3.5 text-cyan-400"></i> Modern Frontend & Backend</span>
+        <div class="pt-8 flex flex-wrap items-center justify-center gap-5 text-xs text-slate-300 border-t border-slate-800/70">
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="palette" class="w-3.5 h-3.5 text-cyan-400"></i> Tailwind CSS & React.js</span>
           <span class="text-slate-700 hidden sm:inline">•</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-indigo-400"></i> Native Android & Kotlin</span>
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-indigo-400"></i> Native Android Apps (Kotlin/Java)</span>
           <span class="text-slate-700 hidden sm:inline">•</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="zap" class="w-3.5 h-3.5 text-emerald-400"></i> Performance & SEO Focused</span>
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="layout-dashboard" class="w-3.5 h-3.5 text-emerald-400"></i> PHP Websites & Custom Admin Panels</span>
+          <span class="text-slate-700 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i> HSSC Exam Prep & Mock Test Portals</span>
         </div>
       </div>
     </section>
@@ -247,31 +255,31 @@
               </div>
               <div>
                 <h3 class="font-bold text-white text-lg">Gulshan Rana</h3>
-                <p class="text-xs text-slate-400">Software Developer & Consultant</p>
+                <p class="text-xs text-slate-400">Specialist: Android, React & PHP Admin Panels</p>
               </div>
             </div>
 
             <p class="text-xs text-slate-300 leading-relaxed">
-              Focused on delivering end-to-end software solutions with clean architecture, robust security, and delightful user interactions.
+              Focused on delivering end-to-end software solutions with clean architecture, robust MySQL databases, and complete admin panel autonomy.
             </p>
 
             <div class="grid grid-cols-2 gap-3 pt-2">
               <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-                <span class="text-2xl font-bold text-white block">40+</span>
-                <span class="text-[11px] text-slate-400">Delivered Builds</span>
+                <span class="text-2xl font-bold text-white block">45+</span>
+                <span class="text-[11px] text-slate-400">Apps & Web Portals</span>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
                 <span class="text-2xl font-bold text-cyan-400 block">100%</span>
-                <span class="text-[11px] text-slate-400">On-Time Delivery</span>
+                <span class="text-[11px] text-slate-400">Custom Admin Panels</span>
               </div>
             </div>
 
             <div class="pt-2 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800">
               <span class="flex items-center gap-1.5">
-                <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i> gulshanr7@gmail.com
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i> Karnal, Haryana
               </span>
               <span class="flex items-center gap-1.5">
-                <i data-lucide="globe" class="w-3.5 h-3.5 text-indigo-400"></i> Global Reach
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> Full Client Ownership
               </span>
             </div>
           </div>
@@ -283,30 +291,30 @@
             About Developer
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Crafting Reliable Code That Drives Real Business Value
+            Specialized Development for High-Impact Web & Android Solutions
           </h2>
           <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-            I specialize in full-lifecycle product development, translating ambiguous requirements into polished web platforms and production-ready mobile apps.
+            I specialize in a focused, high-performance tech stack: <strong class="text-white">Tailwind CSS</strong> and <strong class="text-white">React.js</strong> for modern interactive interfaces, <strong class="text-white">Android Studio (Kotlin/Java)</strong> for native mobile applications, and <strong class="text-white">PHP with MySQL</strong> for dynamic websites with 100% custom-tailored <strong class="text-white">Admin Panels</strong>.
           </p>
           <p class="text-sm text-slate-400 leading-relaxed">
-            My engineering process prioritizes clean code standards, modular design patterns, cross-browser compatibility, and seamless API integrations. Whether you need an e-commerce infrastructure, a bespoke software portal, or a high-performance Android mobile application, I deliver stable, scalable results.
+            Whether you need an educational examination ecosystem like an <strong class="text-cyan-300">HSSC Exam Preparation Android App</strong>, a complete <strong class="text-cyan-300">HSSC Mock Test Website with real-time timers and scorecards</strong>, or an institute/business portal with an intuitive PHP backend to manage questions, courses, users, and content — I deliver rock-solid, production-ready systems.
           </p>
 
           <!-- Core Pillars -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="p-4 rounded-2xl glass-card space-y-1.5">
-              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2">
-                <i data-lucide="monitor" class="w-4 h-4"></i>
-              </div>
-              <h4 class="text-sm font-semibold text-white">Full-Stack Web Engineering</h4>
-              <p class="text-xs text-slate-400">Pixel-perfect, highly responsive interfaces backed by scalable backend services.</p>
-            </div>
-            <div class="p-4 rounded-2xl glass-card space-y-1.5">
               <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-2">
                 <i data-lucide="smartphone" class="w-4 h-4"></i>
               </div>
-              <h4 class="text-sm font-semibold text-white">Native & Hybrid Mobile</h4>
-              <p class="text-xs text-slate-400">Intuitive Android applications following Google Material 3 standards and clean architecture.</p>
+              <h4 class="text-sm font-semibold text-white">Native Android Apps</h4>
+              <p class="text-xs text-slate-400">Offline-first exam apps, quiz engines with local Room DB, and Firebase push alerts.</p>
+            </div>
+            <div class="p-4 rounded-2xl glass-card space-y-1.5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2">
+                <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+              </div>
+              <h4 class="text-sm font-semibold text-white">PHP Websites & Admin Panels</h4>
+              <p class="text-xs text-slate-400">Complete CMS control to upload mock tests, manage student data, and update website content.</p>
             </div>
           </div>
         </div>
@@ -317,43 +325,18 @@
     <section id="services" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
-          Capabilities
+          Core Services
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Services Built for Growth & Reliability
+          What I Build & Deliver
         </h2>
         <p class="text-sm text-slate-400">
-          Professional development services focused on velocity, security, and exceptional user satisfaction.
+          Professional development services laser-focused on Android apps, React interfaces, and PHP websites with custom Admin Panels.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Service 1 -->
-        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
-          <div class="space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="globe" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">Website Development</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Custom web applications built with modern frontend frameworks and responsive architectures designed to maximize speed and conversions.
-            </p>
-            <ul class="space-y-2 text-xs text-slate-300 pt-2">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Responsive Single-Page Apps (React, Next.js)</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Custom E-Commerce & Business Portals</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Technical SEO & PageSpeed Optimization</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Cloud Hosting & CI/CD Pipelines</li>
-            </ul>
-          </div>
-          <div class="pt-6">
-            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:gap-2 transition-all">
-              <span>Start Web Project</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
+        <!-- Service 1: Android Apps -->
         <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
           <div class="space-y-4">
             <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center group-hover:scale-110 transition">
@@ -361,43 +344,71 @@
             </div>
             <h3 class="text-xl font-bold text-white">Android App Development</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Robust, battery-efficient mobile applications built natively for the Android platform with intuitive UI and rock-solid state management.
+              Native Android applications engineered with Kotlin & Java in Android Studio. Fast, battery-efficient, and optimized for offline learning & quiz execution.
             </p>
             <ul class="space-y-2 text-xs text-slate-300 pt-2">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Kotlin & Java Android Architecture</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Offline-First Storage (Room DB / SQLite)</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Push Alerts & Background Syncing</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Google Play Store Submission & Audit</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> HSSC & Competitive Exam Preparation Apps</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Offline Storage with SQLite & Room Database</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Interactive Daily Quiz Engine with Timers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Firebase Push Notifications for Exam Alerts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Google Play Store APK/AAB Deployment</li>
             </ul>
           </div>
           <div class="pt-6">
-            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:gap-2 transition-all">
-              <span>Start Mobile Project</span>
+            <a href="#contact" onclick="prefillService('android')" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Start Android App Project</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
-        <!-- Service 3 -->
+        <!-- Service 2: React & Tailwind Web -->
         <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
           <div class="space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
-              <i data-lucide="layers" class="w-6 h-6"></i>
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="palette" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold text-white">API & Cloud Integrations</h3>
+            <h3 class="text-xl font-bold text-white">React.js & Tailwind CSS Web</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Bridging frontends with resilient backend workflows, third-party microservices, authentication systems, and payment gateways.
+              Lightning-fast frontend applications with responsive mobile-first layouts, modern dark glassmorphic themes, and dynamic single-page web performance.
             </p>
             <ul class="space-y-2 text-xs text-slate-300 pt-2">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> REST API Design & Implementation</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Payment Gateways & Secure Checkouts</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Database Modeling & Query Optimization</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Code Auditing & Performance Refactoring</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> HSSC Online Mock Test Interface with Timer</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Question Palette & Review Status Tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Tailored UI with Utility-First Tailwind CSS</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Smooth SPA Navigation & Instant Scorecards</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> 100% Mobile & Desktop Responsive Layout</li>
             </ul>
           </div>
           <div class="pt-6">
-            <a href="#contact" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:gap-2 transition-all">
-              <span>Connect Services</span>
+            <a href="#contact" onclick="prefillService('react')" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Build React Web App</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: PHP Websites with Admin Panels -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
+              <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">PHP Websites & Admin Panels</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Complete dynamic websites powered by PHP & MySQL, featuring password-protected Admin Panels where you manage questions, users, courses, and content.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Full CRUD Admin Dashboards (Add, Edit, Delete)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Mock Test & Question Bank Management Panel</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Student & User Registration System</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Secure PHP Sessions & SQL Injection Defense</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Coaching Institute, Business & E-Commerce CMS</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" onclick="prefillService('admin')" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:gap-2 transition-all">
+              <span>Build PHP Admin Website</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
@@ -410,259 +421,393 @@
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">
-            Selected Works
+            Featured Portfolio
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Recent Web & Mobile Deployments
+            Selected Apps & Websites with Admin Panels
           </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Real-world HSSC exam preparation apps, online mock test portals, and dynamic PHP websites.
+          </p>
         </div>
         <!-- Filter Tabs -->
-        <div class="flex items-center gap-1.5 p-1.5 rounded-xl bg-slate-900 border border-slate-800 self-start md:self-auto">
-          <button onclick="filterPortfolio('all')" id="btn-all" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-white">All</button>
-          <button onclick="filterPortfolio('web')" id="btn-web" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">Web</button>
-          <button onclick="filterPortfolio('android')" id="btn-android" class="portfolio-tab px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">Android</button>
+        <div class="flex flex-wrap items-center gap-1.5 p-1.5 rounded-xl bg-slate-900 border border-slate-800 self-start md:self-auto">
+          <button onclick="filterPortfolio('all')" id="btn-all" class="portfolio-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-white">All Works</button>
+          <button onclick="filterPortfolio('android')" id="btn-android" class="portfolio-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">Android Apps</button>
+          <button onclick="filterPortfolio('web')" id="btn-web" class="portfolio-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">React & Tailwind</button>
+          <button onclick="filterPortfolio('admin')" id="btn-admin" class="portfolio-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-slate-400 hover:text-white">PHP Admin Panels</button>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsContainer">
-        <!-- Item 1: Web -->
-        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
-          <div class="p-6 space-y-4">
-            <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-cyan-400">Web App</span>
-              <i data-lucide="layout" class="w-4 h-4"></i>
-            </div>
-            <h3 class="text-lg font-bold text-white">Enterprise Business Dashboard</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Real-time analytics dashboard featuring granular access permissions, telemetry charts, and dynamic invoice generation.
-            </p>
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">React</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Tailwind</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Node.js</span>
-            </div>
-          </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
-              <span>Discuss Similar Build</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
 
-        <!-- Item 2: Android -->
+        <!-- Project 1: HSSC Exam Preparation App -->
         <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
           <div class="p-6 space-y-4">
             <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-indigo-400">Android App</span>
-              <i data-lucide="smartphone" class="w-4 h-4"></i>
+              <span class="font-mono text-indigo-400 font-semibold flex items-center gap-1">
+                <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Android App
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Native Kotlin</span>
             </div>
-            <h3 class="text-lg font-bold text-white">Smart Logistics & Courier Tracker</h3>
+            <h3 class="text-lg font-bold text-white">HSSC Exam Preparation App</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Native Android logistics application featuring background GPS location updates, offline cache, and real-time shipment status.
+              Full-featured Android mobile application tailored for Haryana competitive exams (HSSC CET, Haryana Police, Clerk, Group D). Features offline Haryana GK, subject quizzes, and previous years' solved papers.
             </p>
             <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Room DB</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">WorkManager</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Android SDK</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-indigo-300">Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">Room SQLite</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Offline Mode</span>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
-              <span>View Architecture Specs</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('hssc-app')" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>View App Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Karnal, Haryana</span>
           </div>
         </div>
 
-        <!-- Item 3: Web -->
+        <!-- Project 2: HSSC Mock Test Website -->
         <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
           <div class="p-6 space-y-4">
             <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-cyan-400">Web App</span>
-              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span class="font-mono text-cyan-400 font-semibold flex items-center gap-1">
+                <i data-lucide="globe" class="w-3.5 h-3.5"></i> Web App
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">React & Tailwind</span>
             </div>
-            <h3 class="text-lg font-bold text-white">Direct-to-Consumer E-Commerce</h3>
+            <h3 class="text-lg font-bold text-white">HSSC Mock Test Web Portal</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              High-converting headless storefront with razor-fast product browsing, cart persistence, and secure payment processing.
+              Interactive online examination platform simulating official NTA / HSSC CBT interface. Real-time test countdown timer, question palette, negative marking calculator, and instant rank cards.
             </p>
             <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Next.js</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">PostgreSQL</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Razorpay</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">React.js</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-sky-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">PHP REST API</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-amber-300">CBT Engine</span>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
-              <span>Discuss Storefront</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('hssc-web')" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
+              <span>View Portal Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Live Architecture</span>
           </div>
         </div>
 
-        <!-- Item 4: Android -->
+        <!-- Project 3: HSSC Mock Test & Question Bank Admin Panel -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="admin">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-emerald-400 font-semibold flex items-center gap-1">
+                <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i> PHP Admin Panel
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">PHP & MySQL</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">HSSC Mock Test & Question Bank Admin</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Complete administrative backend allowing educators to create test series, add bilingual MCQs (Hindi/English), set marks/time limits, and inspect student test attempts and scorecards.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">Core & OOP PHP</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-amber-300">MySQL Database</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Role-Based Auth</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('hssc-admin')" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:underline">
+              <span>View Admin Features</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">CRUD System</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Haryana Job Alert & Sarkari Bharti Portal -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="admin">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-emerald-400 font-semibold flex items-center gap-1">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Dynamic Portal
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">PHP CMS</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Haryana Sarkari Alert & Results Portal</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              High-traffic government exam notification portal with dynamic categorization (HSSC, HPSC, CET, Police). Features a custom PHP admin panel to post latest vacancies, admit cards, and syllabus PDFs.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">PHP 8+</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-amber-300">MySQL</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Fast SEO</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('sarkari-portal')" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:underline">
+              <span>View CMS Details</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Live Management</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Smart Daily Quiz & Practice Android App -->
         <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
           <div class="p-6 space-y-4">
             <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-indigo-400">Android App</span>
-              <i data-lucide="activity" class="w-4 h-4"></i>
+              <span class="font-mono text-indigo-400 font-semibold flex items-center gap-1">
+                <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Android App
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Native Android</span>
             </div>
-            <h3 class="text-lg font-bold text-white">Health & Fitness Daily Routine</h3>
+            <h3 class="text-lg font-bold text-white">Daily Quiz & Mock Test Android App</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Mobile utility app offering personalized workout schedules, pedometer sync, and local data export capabilities.
+              Lightweight Android quiz application with timed tests, sound effects, question bookmarks, local score history, and automatic sync with the PHP backend question database.
             </p>
             <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Android SDK</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Material 3</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-indigo-300">Java / Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Android Studio</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">SQLite DB</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-amber-300">Play Store Ready</span>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
-              <span>Request APK Demo</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('quiz-app')" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>View App Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Android APK</span>
           </div>
         </div>
 
-        <!-- Item 5: Web -->
+        <!-- Project 6: Coaching Institute & Student Portal with PHP Admin Panel -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="admin">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-emerald-400 font-semibold flex items-center gap-1">
+                <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i> Web + Admin
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">PHP & React</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Coaching Institute Website with Admin</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Complete digital infrastructure for coaching institutes in Haryana. Public website built with React & Tailwind CSS, backed by a comprehensive PHP admin panel for batch management, course fees, and notes.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">PHP & MySQL</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">React.js</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-sky-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Student Portal</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('coaching-admin')" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:underline">
+              <span>View Portal Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Full Infrastructure</span>
+          </div>
+        </div>
+
+        <!-- Project 7: E-Commerce & Retail Portal with PHP Admin Panel -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="admin">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-emerald-400 font-semibold flex items-center gap-1">
+                <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i> E-Commerce CMS
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">PHP Admin</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Retail Store & Order Management Portal</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Custom business website with an integrated PHP admin panel for product inventory, customer inquiries, bill generation, and dynamic category editing without touching code.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">PHP 8</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-amber-300">MySQL Database</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Invoices & Orders</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('retail-admin')" class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 hover:underline">
+              <span>View Store Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Business Portal</span>
+          </div>
+        </div>
+
+        <!-- Project 8: Haryana CET Study Notes & PDF Viewer Android App -->
+        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
+          <div class="p-6 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-indigo-400 font-semibold flex items-center gap-1">
+                <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Android App
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Kotlin App</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Haryana CET Notes & E-Book App</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Dedicated student companion app featuring chapter-wise Haryana General Knowledge, Math, Hindi & Reasoning notes. Built with native PDF rendering and offline night mode.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-indigo-300">Kotlin</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">Android SDK</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">Room DB</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">PDF Engine</span>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('cet-notes-app')" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
+              <span>View App Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">Offline App</span>
+          </div>
+        </div>
+
+        <!-- Project 9: Interactive Mock Test Examination Simulator -->
         <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="web">
           <div class="p-6 space-y-4">
             <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-cyan-400">Web Platform</span>
-              <i data-lucide="server" class="w-4 h-4"></i>
+              <span class="font-mono text-cyan-400 font-semibold flex items-center gap-1">
+                <i data-lucide="layout" class="w-3.5 h-3.5"></i> Single-Page App
+              </span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">React SPA</span>
             </div>
-            <h3 class="text-lg font-bold text-white">SaaS Documentation & API Portal</h3>
+            <h3 class="text-lg font-bold text-white">Online Exam CBT Simulator</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Ultra-fast technical docs portal with real-time API query playground, version toggling, and instant search indexing.
+              Ultra-responsive CBT interface replicating state commission exam screens. Features section switching (GK, Maths, English, Science), question flagging, and detailed answer breakdown.
             </p>
             <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">React</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Tailwind</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Algolia</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-cyan-300">React.js</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-sky-300">Tailwind CSS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-emerald-300">State Management</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Instant Analytics</span>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
-              <span>View Case Details</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/50 flex items-center justify-between">
+            <button onclick="openProjectModal('cbt-simulator')" class="text-xs font-semibold text-cyan-400 flex items-center gap-1.5 hover:underline">
+              <span>View Simulator Specs</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] text-slate-500">React Frontend</span>
           </div>
         </div>
 
-        <!-- Item 6: Android -->
-        <div class="project-box glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="android">
-          <div class="p-6 space-y-4">
-            <div class="flex items-center justify-between text-xs text-slate-400">
-              <span class="font-mono text-indigo-400">Android App</span>
-              <i data-lucide="bell" class="w-4 h-4"></i>
-            </div>
-            <h3 class="text-lg font-bold text-white">Instant Event Notification Hub</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Lightweight utility application integrating Firebase Cloud Messaging, topic subscriptions, and deep linking workflows.
-            </p>
-            <div class="flex flex-wrap gap-1.5 pt-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Kotlin</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">Firebase FCM</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300">REST API</span>
-            </div>
-          </div>
-          <div class="px-6 pb-6 pt-2">
-            <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1.5 hover:underline">
-              <span>Inquire Specs</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- Tech Stack Section -->
+    <!-- Tech Stack Section (Only Tailwind, React, Android & PHP) -->
     <section id="skills" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
-          Core Competencies
+          Dedicated Tech Stack
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Tools & Modern Technologies
+          Core Technologies & Tools
         </h2>
         <p class="text-sm text-slate-400">
-          Industry-tested technologies utilized to deliver stable, scalable, and maintainable software.
+          Strictly specialized in Tailwind CSS, React.js, Native Android Apps, and PHP with dynamic MySQL Admin Panels.
         </p>
       </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
-        <!-- 1 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="layers" class="w-6 h-6 text-cyan-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">React.js</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Frontend</span>
-        </div>
-        <!-- 2 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="smartphone" class="w-6 h-6 text-indigo-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">Kotlin & Java</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Android SDK</span>
-        </div>
-        <!-- 3 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="server" class="w-6 h-6 text-emerald-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">Node.js</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Backend APIs</span>
-        </div>
-        <!-- 4 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="cpu" class="w-6 h-6 text-sky-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">Next.js</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Full-Stack</span>
-        </div>
-        <!-- 5 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="database" class="w-6 h-6 text-amber-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">PostgreSQL</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Relational DB</span>
-        </div>
-        <!-- 6 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="box" class="w-6 h-6 text-emerald-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">MongoDB</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">NoSQL Store</span>
-        </div>
-        <!-- 7 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="flame" class="w-6 h-6 text-orange-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">Firebase</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Auth & FCM</span>
-        </div>
-        <!-- 8 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="palette" class="w-6 h-6 text-cyan-400 mb-2"></i>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+        <!-- 1: Tailwind CSS -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="palette" class="w-5 h-5"></i>
+          </div>
           <span class="text-xs font-bold text-white">Tailwind CSS</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">UI Styling</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Utility UI & Dark Mode</span>
         </div>
-        <!-- 9 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="git-branch" class="w-6 h-6 text-rose-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">Git & GitHub</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Version Control</span>
+
+        <!-- 2: React JS -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">React.js</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Dynamic Web SPAs</span>
         </div>
-        <!-- 10 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="cloud" class="w-6 h-6 text-blue-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">RESTful APIs</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Integration</span>
+
+        <!-- 3: Android App Development -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="smartphone" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">Android Apps</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Kotlin & Java SDK</span>
         </div>
-        <!-- 11 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="shield-check" class="w-6 h-6 text-teal-400 mb-2"></i>
-          <span class="text-xs font-bold text-white">JWT & Security</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Authentication</span>
+
+        <!-- 4: PHP Development -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="code-2" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">PHP Backend</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Core & OOP PHP</span>
         </div>
-        <!-- 12 -->
-        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center">
-          <i data-lucide="play-circle" class="w-6 h-6 text-violet-400 mb-2"></i>
+
+        <!-- 5: Custom Admin Panels -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">Custom Admin Panels</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Full CRUD & CMS Control</span>
+        </div>
+
+        <!-- 6: MySQL Database -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="database" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">MySQL Database</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Relational Data & Schema</span>
+        </div>
+
+        <!-- 7: Android Room DB & SQLite -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="hard-drive" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">Room & SQLite DB</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Android Offline Storage</span>
+        </div>
+
+        <!-- 8: RESTful APIs -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">PHP REST APIs</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">JSON App & Web Sync</span>
+        </div>
+
+        <!-- 9: Android Play Console -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="play-circle" class="w-5 h-5"></i>
+          </div>
           <span class="text-xs font-bold text-white">Play Console</span>
-          <span class="text-[10px] text-slate-400 font-mono mt-0.5">Deployment</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">APK / AAB Publishing</span>
+        </div>
+
+        <!-- 10: Security & Auth -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col items-center justify-center text-center">
+          <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-2.5">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-white">Session Security</span>
+          <span class="text-[10px] text-slate-400 font-mono mt-0.5">SQL Injection Defense</span>
         </div>
       </div>
     </section>
@@ -677,7 +822,7 @@
           Let’s Discuss Your Next Build
         </h2>
         <p class="text-sm text-slate-400">
-          Have an upcoming project, website revamp, or Android mobile app idea? Reach out directly.
+          Need an Android App (e.g. HSSC exam prep, quiz app), an Online Mock Test Portal, or a PHP website with a complete Admin Panel? Reach out directly.
         </p>
       </div>
 
@@ -709,7 +854,7 @@
           </a>
 
           <!-- WhatsApp Card -->
-          <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="glass-card p-6 rounded-2xl flex items-center gap-4 group">
+          <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20an%20Android%20App%20/%20PHP%20Website%20project" target="_blank" class="glass-card p-6 rounded-2xl flex items-center gap-4 group">
             <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
               <i data-lucide="message-square" class="w-5 h-5"></i>
             </div>
@@ -727,7 +872,7 @@
               <h4 class="text-sm font-bold text-white">Project Consultations</h4>
             </div>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Available for full development cycles, standalone Android features, website overhauls, and technical consulting.
+              Available for full Android app development, HSSC mock test websites, custom PHP admin panel backends, and portal maintenance across Haryana and globally.
             </p>
           </div>
         </div>
@@ -742,33 +887,34 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-medium text-slate-300 mb-1.5" for="nameInput">Your Name *</label>
-                  <input type="text" id="nameInput" required placeholder="John Doe" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                  <input type="text" id="nameInput" required placeholder="Aman Sharma" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
                 </div>
                 <div>
                   <label class="block text-xs font-medium text-slate-300 mb-1.5" for="emailInput">Your Email *</label>
-                  <input type="email" id="emailInput" required placeholder="john@example.com" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                  <input type="email" id="emailInput" required placeholder="aman@example.com" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-medium text-slate-300 mb-1.5" for="phoneInput">Phone / WhatsApp</label>
-                  <input type="tel" id="phoneInput" placeholder="+91 ..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                  <input type="tel" id="phoneInput" placeholder="+91 98765 43210" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
                 </div>
                 <div>
                   <label class="block text-xs font-medium text-slate-300 mb-1.5" for="serviceSelect">Service Needed</label>
                   <select id="serviceSelect" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition">
-                    <option value="Website Development">Website Development</option>
-                    <option value="Android App Development">Android App Development</option>
-                    <option value="Full-Stack Web & Mobile">Full-Stack (Web + Android)</option>
-                    <option value="API Integration & Maintenance">API & Maintenance</option>
+                    <option value="Android App Development (e.g. HSSC Exam Prep / Quiz App)">Android App Development (HSSC Exam Prep / Quiz App)</option>
+                    <option value="HSSC Mock Test Website & Online Exam Portal">HSSC Mock Test Website & Online Exam Portal</option>
+                    <option value="PHP Dynamic Website with Custom Admin Panel">PHP Dynamic Website with Custom Admin Panel</option>
+                    <option value="React.js & Tailwind CSS Frontend Web App">React.js & Tailwind CSS Frontend Web App</option>
+                    <option value="Full Package (Android App + PHP Admin Website)">Full Package (Android App + PHP Admin Website)</option>
                   </select>
                 </div>
               </div>
 
               <div>
                 <label class="block text-xs font-medium text-slate-300 mb-1.5" for="messageInput">Project Overview *</label>
-                <textarea id="messageInput" required rows="4" placeholder="Briefly describe what you're looking to build..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                <textarea id="messageInput" required rows="4" placeholder="Describe your app or website requirements (e.g. HSSC Mock Test with timer, admin panel for adding questions, Android app with offline study notes)..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"></textarea>
               </div>
 
               <button type="submit" class="w-full btn-gradient text-white font-semibold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg shadow-cyan-500/20">
@@ -782,15 +928,68 @@
     </section>
   </main>
 
-  <!-- Success Modal -->
+  <!-- Project Detail Modal -->
+  <div id="projectDetailModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 hidden">
+    <div class="glass-card max-w-2xl w-full p-6 sm:p-8 rounded-3xl border border-slate-700/80 max-h-[90vh] overflow-y-auto space-y-6">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <span id="modalProjectTag" class="text-xs font-mono px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-semibold">
+            Category
+          </span>
+          <h3 id="modalProjectTitle" class="text-2xl font-bold text-white mt-2">
+            Project Title
+          </h3>
+        </div>
+        <button onclick="closeProjectModal()" class="text-slate-400 hover:text-white p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <p id="modalProjectDescription">
+          Detailed project overview will appear here.
+        </p>
+
+        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2 text-xs uppercase tracking-wider text-cyan-400">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Key Functional Highlights
+          </h4>
+          <ul id="modalProjectFeatures" class="space-y-1.5 text-slate-300 list-disc list-inside">
+            <!-- Dynamically injected -->
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-2 text-indigo-400">
+            Technology Stack Utilized
+          </h4>
+          <div id="modalProjectTech" class="flex flex-wrap gap-2">
+            <!-- Dynamically injected -->
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row gap-3 items-center justify-between">
+        <button onclick="closeProjectModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition">
+          Back to Projects
+        </button>
+        <button id="modalProjectInquireBtn" onclick="inquireFromModal()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl btn-gradient text-white text-xs font-semibold flex items-center justify-center gap-2">
+          <span>Inquire About Similar Project</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Mailto Modal -->
   <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 hidden">
     <div class="glass-card max-w-md w-full p-6 sm:p-8 rounded-3xl text-center space-y-4">
       <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto">
         <i data-lucide="check" class="w-7 h-7"></i>
       </div>
-      <h3 class="text-lg font-bold text-white">Message Ready!</h3>
+      <h3 class="text-lg font-bold text-white">Inquiry Prepared!</h3>
       <p id="modalDescription" class="text-xs text-slate-300 leading-relaxed">
-        Your message draft has been prepared for Gulshan Rana.
+        Your project inquiry has been prepared for Gulshan Rana.
       </p>
       <div class="pt-2 flex flex-col sm:flex-row gap-3">
         <button onclick="closeModal()" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition">
@@ -805,7 +1004,7 @@
   </div>
 
   <!-- Floating Quick-Action WhatsApp Button -->
-  <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+  <a href="https://wa.me/918295573062?text=Hello%20Gulshan,%20I%20would%20like%20to%20discuss%20an%20Android%20App%20/%20PHP%20Website%20project" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
@@ -818,18 +1017,18 @@
         </div>
         <span class="font-bold text-slate-200 text-sm">Gulshan Rana</span>
         <span class="text-slate-600">|</span>
-        <span class="text-xs text-slate-400">Web & Android Developer</span>
+        <span class="text-xs text-slate-400">Tailwind CSS • React JS • Android Apps • PHP Admin Panels</span>
       </div>
 
       <div class="flex items-center gap-6 text-xs text-slate-400">
         <a href="tel:+918295573062" class="hover:text-cyan-400 transition">Phone</a>
         <a href="mailto:gulshanr7@gmail.com" class="hover:text-cyan-400 transition">Email</a>
         <a href="https://wa.me/918295573062" target="_blank" class="hover:text-emerald-400 transition">WhatsApp</a>
-        <a href="https://github.com" target="_blank" class="hover:text-white transition">GitHub</a>
+        <a href="#contact" class="hover:text-white transition">Get Quote</a>
       </div>
 
       <p class="text-xs text-slate-500">
-        &copy; <span id="currentYear"></span> Gulshan Rana. All rights reserved.
+        &copy; <span id="currentYear"></span> Gulshan Rana. All rights reserved. Karnal, Haryana.
       </p>
     </div>
   </footer>
@@ -881,6 +1080,204 @@
       });
     }
 
+    // Project Details Data
+    const projectDetails = {
+      'hssc-app': {
+        title: 'HSSC Exam Preparation Android App',
+        tag: 'Native Android App',
+        description: 'A comprehensive, high-retention Android application specifically designed for Haryana competitive examinations (CET Group C & D, Haryana Police Constable & SI, Clerk, Patwari). Includes categorized Haryana GK, subject-wise quizzes, previous 10-year solved question papers, and full offline study mode.',
+        features: [
+          'Offline Mode: Study Haryana GK & history without active mobile data using Room DB / SQLite.',
+          'Daily Mock Quizzes: 20-question timed practice sets with instant score and solutions.',
+          'Push Notifications: Firebase cloud messaging for admit card dates, exam schedules & syllabus updates.',
+          'Bilingual Questions: Supports both Hindi and English for maximum student accessibility in Haryana.',
+          'APK & Play Store Ready: Optimized memory footprint under 15MB, fast cold-start performance.'
+        ],
+        tech: ['Android Studio', 'Kotlin', 'Java SDK', 'Room SQLite DB', 'Firebase Push Alerts', 'Material 3']
+      },
+      'hssc-web': {
+        title: 'HSSC Online Mock Test Web Portal',
+        tag: 'React.js & Tailwind CSS',
+        description: 'Real-time computer-based testing (CBT) portal replicating official NTA / HSSC examination interfaces. Designed for high concurrency, providing students with realistic test-taking conditions, timed section alerts, and comprehensive post-exam performance breakdowns.',
+        features: [
+          'Real-Time Countdown Timer: Auto-submits test when exam duration expires.',
+          'Interactive Question Palette: Color-coded indicators (Answered, Not Answered, Marked for Review).',
+          'Negative Marking Engine: Automatically computes final score, accuracy %, and state-level percentile.',
+          'Instant Solution Key: Step-by-step rationales and explanations for every question.',
+          'Responsive Tailwind UI: Seamless experience across smartphones, tablets, laptops, and desktops.'
+        ],
+        tech: ['React.js', 'Tailwind CSS', 'PHP REST Endpoints', 'MySQL Database', 'CBT Engine']
+      },
+      'hssc-admin': {
+        title: 'HSSC Mock Test & Question Bank Admin Panel',
+        tag: 'PHP & MySQL Custom Admin Panel',
+        description: 'A powerful, secure back-office admin panel built from scratch in PHP & MySQL for coaching centers and test administrators. Empowers staff to manage question banks, schedule test series, and analyze candidate results without writing a single line of code.',
+        features: [
+          'Full Question Bank CRUD: Add, edit, bulk upload, or delete bilingual multiple-choice questions.',
+          'Test Series Creator: Set exam name, total marks, negative marking rules, and time duration.',
+          'Student Analytics: View student registrations, test attempt histories, marks distributions, and rankings.',
+          'PDF & Notes Manager: Upload syllabus PDFs, previous question papers, and educational notices.',
+          'Security & Role Access: Encrypted admin logins, session fixation protection, and prepared SQL statements.'
+        ],
+        tech: ['PHP 8+ (Core/OOP)', 'MySQL Database', 'Tailwind CSS', 'Role-Based Authentication', 'Session Security']
+      },
+      'sarkari-portal': {
+        title: 'Haryana Sarkari Job Alerts & Result Web Portal',
+        tag: 'PHP Dynamic CMS',
+        description: 'Fast, lightweight dynamic website covering Haryana and central government job openings, admit cards, answer keys, and exam syllabuses. Includes a password-protected PHP admin panel for 1-click publishing.',
+        features: [
+          'Quick Publishing CMS: Add new job alerts, admit cards, and results with direct download links in seconds.',
+          'Category Filtering: Separate sections for HSSC, HPSC, Banking, Railways, and Police vacancies.',
+          'Technical SEO Optimized: Clean semantic URLs and fast load speeds under 1 second on mobile networks.',
+          'Inquiry & Contact Tracker: Receive queries from students and candidates directly into the admin dashboard.'
+        ],
+        tech: ['PHP', 'MySQL', 'Tailwind CSS', 'Dynamic CMS', 'SEO Architecture']
+      },
+      'quiz-app': {
+        title: 'Daily Quiz & Mock Test Android App',
+        tag: 'Android Studio Native',
+        description: 'Lightweight, interactive mobile quiz application designed for rapid daily practice and competitive aspirant retention. Connects with a PHP MySQL backend API for daily question updates.',
+        features: [
+          'Timer-Based Quizzes: 30-second timers per question with sound effects and vibration feedback.',
+          'Leaderboard & High Scores: Local and server-synchronized score tracking.',
+          'Question Bookmarks: Save difficult questions to review later in an offline bookmarks tab.',
+          'Lightweight APK: Optimized resources ensuring smooth performance on budget smartphones.'
+        ],
+        tech: ['Android SDK', 'Java / Kotlin', 'SQLite DB', 'PHP JSON API', 'Material Design']
+      },
+      'coaching-admin': {
+        title: 'Coaching Institute Management & Student Portal',
+        tag: 'PHP & React Full-Stack',
+        description: 'Complete digital management infrastructure for educational coaching institutes in Karnal and Haryana. Features a public responsive React & Tailwind website and an exhaustive PHP admin panel.',
+        features: [
+          'Student Registration & Batches: Manage course admissions, student contact records, and fee status.',
+          'Online Study Material: Distribute subject notes and video lecture links to registered students.',
+          'Student Inquiry Management: Lead capture forms for new admissions with real-time admin notifications.',
+          'Customizable Banners & Notices: Update coaching announcements, toppers lists, and new batch dates.'
+        ],
+        tech: ['PHP', 'MySQL', 'React.js', 'Tailwind CSS', 'Admin Dashboard']
+      },
+      'retail-admin': {
+        title: 'Retail Store & Order Management Portal',
+        tag: 'PHP & MySQL CMS',
+        description: 'Dynamic commercial website featuring a product showcase, inquiry engine, order logs, and a complete PHP admin panel allowing store owners to update their inventory without developer assistance.',
+        features: [
+          'Product & Catalog CRUD: Add new items, update prices, upload product images, and manage stock levels.',
+          'Order & Inquiry Tracking: Capture customer requests and generate printable invoice summaries.',
+          'Category Hierarchy: Organize products into custom categories and featured collections.',
+          'Responsive Admin UI: Fully responsive Tailwind CSS dashboard manageable directly from smartphones.'
+        ],
+        tech: ['PHP 8', 'MySQL', 'Tailwind CSS', 'Session Auth', 'CRUD Operations']
+      },
+      'cet-notes-app': {
+        title: 'Haryana CET Notes & E-Book Android App',
+        tag: 'Native Android App',
+        description: 'A dedicated reading and study companion app providing Haryana CET aspirants with structured subject notes, formulas, and GK summaries with zero internet dependency.',
+        features: [
+          'Built-In PDF Engine: Fast offline rendering of study notes and test papers.',
+          'Night Mode & Text Sizing: Comfortable reading experience for long study hours.',
+          'Subject Categorization: Haryana History, Geography, Polity, Science, Reasoning & Hindi.',
+          'Search & Bookmarks: Quickly locate topics across multiple chapters.'
+        ],
+        tech: ['Kotlin', 'Android Studio', 'Room Database', 'PDF Viewer', 'Material UI']
+      },
+      'cbt-simulator': {
+        title: 'Online Exam CBT Simulator',
+        tag: 'React.js SPA',
+        description: 'A faithful simulation of state and national computer-based examination environments built using modular React components and responsive Tailwind CSS styling.',
+        features: [
+          'Section Switching: Instant toggle between GK, Reasoning, Quantitative Aptitude, and Language sections.',
+          'Question Status Palette: Visual grid showing attempted, unattempted, and flagged questions.',
+          'Detailed Review Mode: Post-submission analysis highlighting correct vs incorrect choices with explanations.',
+          'Zero Latency: Instant question switching with local state optimization.'
+        ],
+        tech: ['React.js', 'Tailwind CSS', 'Component State', 'JSON Data Store']
+      }
+    };
+
+    let activeModalKey = 'hssc-app';
+
+    function openProjectModal(key) {
+      const data = projectDetails[key];
+      if (!data) return;
+      activeModalKey = key;
+
+      document.getElementById('modalProjectTitle').textContent = data.title;
+      document.getElementById('modalProjectTag').textContent = data.tag;
+      document.getElementById('modalProjectDescription').textContent = data.description;
+
+      const featuresList = document.getElementById('modalProjectFeatures');
+      featuresList.innerHTML = '';
+      data.features.forEach(feat => {
+        const li = document.createElement('li');
+        li.textContent = feat;
+        featuresList.appendChild(li);
+      });
+
+      const techContainer = document.getElementById('modalProjectTech');
+      techContainer.innerHTML = '';
+      data.tech.forEach(t => {
+        const span = document.createElement('span');
+        span.className = 'text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800 text-cyan-300 border border-slate-700';
+        span.textContent = t;
+        techContainer.appendChild(span);
+      });
+
+      document.getElementById('projectDetailModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectDetailModal').classList.add('hidden');
+    }
+
+    function inquireFromModal() {
+      closeProjectModal();
+      const data = projectDetails[activeModalKey];
+      if (data) {
+        let matchedService = 'Full Package (Android App + PHP Admin Website)';
+        if (data.tag.includes('Android')) {
+          matchedService = 'Android App Development (e.g. HSSC Exam Prep / Quiz App)';
+        } else if (data.tag.includes('React') || data.title.includes('Mock Test')) {
+          matchedService = 'HSSC Mock Test Website & Online Exam Portal';
+        } else if (data.tag.includes('PHP')) {
+          matchedService = 'PHP Dynamic Website with Custom Admin Panel';
+        }
+        prefillService(matchedService, `Interested in building a project similar to: ${data.title}`);
+      }
+    }
+
+    const serviceMap = {
+      'android': 'Android App Development (e.g. HSSC Exam Prep / Quiz App)',
+      'web': 'HSSC Mock Test Website & Online Exam Portal',
+      'react': 'React.js & Tailwind CSS Frontend Web App',
+      'admin': 'PHP Dynamic Website with Custom Admin Panel',
+      'full': 'Full Package (Android App + PHP Admin Website)'
+    };
+
+    function prefillService(keyOrName, customMessage = '') {
+      const serviceName = serviceMap[keyOrName] || keyOrName;
+      const select = document.getElementById('serviceSelect');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === serviceName || select.options[i].text.toLowerCase().includes(keyOrName.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      if (customMessage) {
+        const msgArea = document.getElementById('messageInput');
+        if (msgArea && !msgArea.value) {
+          msgArea.value = customMessage;
+        }
+      }
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
     // Contact Form Handler
     function handleInquiry(event) {
       event.preventDefault();
@@ -892,7 +1289,7 @@
 
       const subject = encodeURIComponent(`Project Inquiry: ${service} - ${name}`);
       const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\nService: ${service}\n\nProject Overview:\n${message}`
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\nService: ${service}\n\nProject Requirements:\n${message}`
       );
 
       const mailtoUrl = `mailto:gulshanr7@gmail.com?subject=${subject}&body=${body}`;
@@ -901,7 +1298,7 @@
       mailtoBtn.href = mailtoUrl;
 
       document.getElementById('modalDescription').textContent =
-        `Thank you ${name}! Your inquiry regarding "${service}" has been compiled. Click below to launch your email app and send it directly to gulshanr7@gmail.com.`;
+        `Thank you ${name}! Your project inquiry for "${service}" has been compiled. Click below to launch your email client and send it directly to gulshanr7@gmail.com, or reach out via WhatsApp at +91 8295573062.`;
 
       document.getElementById('successModal').classList.remove('hidden');
       document.getElementById('contactForm').reset();
@@ -910,6 +1307,14 @@
     function closeModal() {
       document.getElementById('successModal').classList.add('hidden');
     }
+
+    // Close modals on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeProjectModal();
+      }
+    });
   </script>
 </body>
 </html>
